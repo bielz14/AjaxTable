@@ -1,0 +1,44 @@
+.form {
+	position: absolute;	
+}
+
+.table {
+	margin-left: 18%;	
+	width: 50%;
+}
+
+input.id_row {
+	display: none;
+	width: 10%;
+	margin-top: 1%;
+}
+
+button[name*="delete"] {	
+	display: block;
+	margin-top: 7.5%;
+}
+
+div.error {
+	color: red;
+}
+
+table {
+	margin: auto;
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+	color: black;
+}
+
+th {
+	text-align: center;
+	background: #ec971f;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+td {
+	background: #ec971f;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
