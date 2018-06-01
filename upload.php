@@ -10,7 +10,7 @@
 
         $connect = $obj_db->getConnection();
 
-        if($_POST['upload']){
+        if(isset($_POST['upload'])){
 
 	        $query = "INSERT INTO `data` (`first name`, `second name`, `e-mail`) values ('$firstName', '$secondName', '$email')";
 
