@@ -100,10 +100,10 @@
 	var button_click = 0;
 	var domsg = false;
 
-	$("table tr").on("click", function(){  
+	$("body").on("click", "table tr", function(){  
 
 		id_row = this.id;
-		$('#id_row').val(id_row);
+		$("#id_row").val(id_row);
 
    		//регулярным выражением вытаскиваем из name только числовое значение, которое будет применятся в выводе alert-ом сообщения о придупреждении удаления строки с этим порядковым номером 
    		num_row = $(this).attr("name").match(/\d+/i); 
@@ -126,16 +126,14 @@
 
 function call(){ 
 
-		var inspect = false;
-
-            // Инициализация плагина на форме
-            // Форма имеет атрибут "registration"
- 
+       var inspect = false;
+       // Инициализация плагина на форме
+       // Форма имеет атрибут "registration"
        if (button_click<3) {
 
             $("form[name='form']").validate({
 
-              errorElement: 'div',
+              errorElement: "div",
 
               // Правила проверки полей
               rules: {
